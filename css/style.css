@@ -1,0 +1,123 @@
+body{
+    font-family: "Roboto", sans-serif;
+    width: 900px;
+    height: 415px;
+}
+
+.container{
+    display: grid;
+    width: 900px;
+    height: 415px;
+    gap: 17px;
+    margin-right: 35px;
+    grid: 
+    "video video video propaganda propaganda" 
+    "video video video relacionados relacionados" 
+    "informacoes informacoes informacoes relacionados relacionados"
+    ;
+}
+.video{
+    grid-area: video;
+}
+
+.informacoes{
+    grid-area: informacoes;
+}
+
+.propaganda{
+    grid-area: propaganda;
+}
+
+.relacionados{
+    grid-area: relacionados;
+}
+
+.informacoes .titulo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.visualizacoes{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.descricao{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.video{
+    max-width: 543px;
+    height: 217px;
+    margin-top: 35px;
+    margin-left: 35px;
+    display: flex;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+    max-width: 540px;
+    margin-left: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.propaganda{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-right: 35px;
+    max-width: 270px;
+    height: 56px;
+}
+
+.propaganda a{
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+.propaganda p{
+    position: relative;
+    right: 165px;
+    top: 20px;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.relacionados{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 270px;
+}
+
+.video-relacionado{
+    display: flex;
+    gap: 5px;
+}
+
+.descricao-relacionado a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-content: space-between;
+    text-decoration: none;
+    color: #000000;
+}
+
+.descricao-relacionado h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.descricao-relacionado p{
+    font-size: 11px;
+    font-weight: 300;
+}
